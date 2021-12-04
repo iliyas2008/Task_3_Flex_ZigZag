@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.card-group{
+    margin: 2rem;
+}
+.card-row:nth-child(even){
+    flex-direction: row-reverse;
+}
+.card-row{
+    margin: auto;
+    display: flex;
+    gap: 2rem;
+    /* flex-wrap: wrap; */
+    margin: 1rem;
+}
+.card-text{
+    flex: 70%;
+}
+.card-img img{
+    width: 20rem;
+    height: 15rem;
+}
+@media(max-width: 768px){
+    .card-row, .card-row:nth-child(even){
+        flex-direction: column;
+    }
+}
